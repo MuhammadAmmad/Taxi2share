@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_comp"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="0.09"
+        android:background="@drawable/nav_bar"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:onClick="fin_de_service" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_logout_c" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_nav_bar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.15"
+            android:gravity="right|center"
+            android:onClick="retour" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_retour" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/back_di"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.05"
+            android:gravity="center"
+            android:onClick="back_home"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/vertical_scrollview_id3"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="0.8"
+        android:fadingEdge="none"
+        android:scrollbars="vertical"
+        android:weightSum="1.0" >
+
+        <LinearLayout
+          
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+           
+          
+            android:orientation="vertical"
+            android:weightSum="6.5" >
+
+          
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                     android:layout_weight="0.5"
+                    android:text="15/12/2014"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+           
+
+            <fragment
+                android:id="@+id/map"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:background="@drawable/map_t" />
+
+            <LinearLayout
+                android:id="@+id/vertical_outer_layout_id3"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:orientation="vertical"	/>
+            </LinearLayout>
+       
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="0.11"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/librate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liberate" />
+    </LinearLayout>
+
+</LinearLayout>

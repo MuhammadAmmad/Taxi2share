@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="item_payment">
+        <item>Bancontact payment</item>
+        <item>Cash payment</item>
+        <item>Credit Card payment</item>
+    </string-array>
+
+</resources>

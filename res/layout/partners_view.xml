@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+  
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/RR1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/cellule" >
+
+        <TextView
+            android:id="@+id/nearby_partner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="Hairdresser"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#7d7d7d"
+            android:textStyle="bold" />
+
+        <Switch
+             android:layout_gravity="end|right"
+                android:layout_marginEnd="5dp"
+              
+            android:id="@+id/on_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp" 
+            android:textOff="OFF"
+			android:textOn="ON" />
+    </RelativeLayout>
+
+</LinearLayout>
+<!-- android:scaleType="fitXY" -->
